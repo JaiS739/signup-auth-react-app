@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+input {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: black;
+  font-size: 20px;
+}
+
+button {
+  padding: 5px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+form {
+  background-color: white;
+  padding: 10px 80px;
+}
+
+span {
+  font-size: 12px;
+  padding: 13px;
+  color: red;
+  display: none;
+}
+
+input:invalid[focused="true"] {
+  border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ span {
+  display: block;
+}
